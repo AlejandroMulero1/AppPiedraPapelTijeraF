@@ -9,13 +9,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="100">
 
         <LinearLayout
             android:background="@color/azulClaro"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_weight="65"
             android:orientation="horizontal">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,74 +24,84 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="333dp"
-                    android:layout_height="418dp"
+                    android:id="@+id/imgVistaPapel"
+                    android:layout_width="175sp"
+                    android:layout_height="175sp"
+                    android:contentDescription="TODO"
                     android:src="@drawable/paper__1_"
+                    android:visibility="gone"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:visibility="gone"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
 
                     android:id="@+id/imgVistaRoca"
-                    android:layout_width="335dp"
-                    android:layout_height="417dp"
+                    android:layout_width="175sp"
+                    android:layout_height="175sp"
                     android:src="@drawable/stone"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:visibility="gone"/>
+                    android:visibility="gone"
+                    android:contentDescription="TODO" />
 
                 <ImageView
 
                     android:id="@+id/imgVistaTijeras"
-                    android:layout_width="333dp"
-                    android:layout_height="414dp"
+                    android:layout_width="175sp"
+                    android:layout_height="175sp"
                     android:src="@drawable/scissors"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:visibility="gone"/>
+                    android:visibility="gone"
+                    android:contentDescription="@string/todo" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
+
         <LinearLayout
             android:background="@color/azulOscuro"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="35"
             android:orientation="horizontal"
-            android:weightSum="99">
+            android:padding="10dp"
+            >
 
             <ImageButton
-                android:id="@+id/imgRoca"
+                android:id="@+id/imgPiedra"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right|center"
-                android:layout_weight="33"
-                android:src="@drawable/stone" />
+                android:layout_weight="1"
+                android:background="@drawable/stone"
+                android:contentDescription="TODO"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
             <ImageButton
                 android:id="@+id/imgPapel"
                 android:layout_width="0dp"
+
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="33"
-                android:src="@drawable/paper__1_" />
+                android:layout_weight="1"
+                android:background="@drawable/paper__1_"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:contentDescription="TODO" />
 
             <ImageButton
-                android:id="@+id/imgTijera"
+                android:id="@+id/imgTijeras"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center|left"
-                android:layout_weight="33"
-                android:src="@drawable/scissors" />
+                android:layout_weight="1"
+                android:background="@drawable/scissors"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:contentDescription="TODO" />
 
         </LinearLayout>
     </LinearLayout>

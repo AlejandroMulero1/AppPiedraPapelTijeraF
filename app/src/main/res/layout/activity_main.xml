@@ -13,7 +13,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView"
+            android:id="@+id/fragmentMaquina"
             android:name="com.example.apppiedrapapeltijera.MaquinaFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -21,7 +21,7 @@
             tools:visibility="visible" />
 
         <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView2"
+            android:id="@+id/fragmentJugador"
             android:name="com.example.apppiedrapapeltijera.JugadorFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
