@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 class MainActivity : AppCompatActivity(), Controlador {
     override fun onCreate(savedInstanceState: Bundle?) {
